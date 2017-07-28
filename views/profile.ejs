@@ -16,14 +16,14 @@
     }
     p{
       font-family:verdana;
-      font-size:6px;
+      font-size:16px;
       color: red;
     }
   </style>
 </head>
 <body>
     
-    <% include partials/nav.ejs %>
+   
     <h1>NODEMAIL</h1>
     <p>a nodebased  mailing service created  by <%= person %></p>
     <p>Age: <%=data.age %> </p>
@@ -35,7 +35,7 @@
              <li><%= item %></li>    
         <% }); %>
     </ul>
-    
+     <% include partials/nav.ejs %>
     
 </body>
 </html>
