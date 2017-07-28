@@ -10,10 +10,6 @@ app.get('/contact',function(req,res){
 	res.render("contact");
 	});
 
-app.get('/gallary',function(req,res){
-	
-	});
-
 app.get('/profile/:name',function(req,res){
 
 	//dummy  data

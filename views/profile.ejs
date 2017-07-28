@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>nodemail services ltd.</title>
+  <style>
+    body{
+      margin:0 auto;
+      width: 350px;
+      background-color: #b3ffd9;
+    }
+
+    h1{
+      font-style: verdana;
+      font-size: 6;
+      color: red;
+    }
+    p{
+      font-family:verdana;
+      font-size:6px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    
+    <% include partials/nav.ejs %>
+    <h1>NODEMAIL</h1>
+    <p>a nodebased  mailing service created  by <%= person %></p>
+    <p>Age: <%=data.age %> </p>
+    <p>Job: <%=data.job %> </p>
+    
+    <h2>Hobbies</h2>
+    <ul>
+        <% data.hobbies.forEach(function(item){%>
+             <li><%= item %></li>    
+        <% }); %>
+    </ul>
+    
+    
+</body>
+</html>
