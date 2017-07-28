@@ -15,6 +15,10 @@ app.get('/history',function(req,res){
 	res.render("history");
 	});
 
+app.get('/gallary',function(req,res){
+	res.render("gallary");
+	});
+
 app.get('/profile/:name',function(req,res){
 
 	//dummy  data
