@@ -10,6 +10,11 @@ app.get('/contact',function(req,res){
 	res.render("contact");
 	});
 
+
+app.get('/history',function(req,res){
+	res.render("history");
+	});
+
 app.get('/profile/:name',function(req,res){
 
 	//dummy  data
